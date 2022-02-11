@@ -1,0 +1,25 @@
+﻿<Page x:Class="Maghazin.PageOtchet"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Maghazin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageOtchet">
+
+    <Grid>
+        <DataGrid Width="550" Height="300">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="100" FontSize="20" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Cost" Binding="{Binding Cost}" Width="100" FontSize="20" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Count after last update" Width="150" FontSize="20" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Actual count" Width="100" FontSize="20" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Profit" Width="100" FontSize="20" IsReadOnly="True"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button x:Name="SozdatOtchet" Content="Сохранить отчёт" Height="30" Width="200" Margin="305,380,295,40"/>
+
+    </Grid>
+</Page>

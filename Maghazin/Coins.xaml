@@ -1,0 +1,39 @@
+﻿<Page x:Class="Maghazin.Coins"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Maghazin"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Coins">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150*"/>
+            <RowDefinition Height="150*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        <Ellipse  Height="74"  Stroke="#FFF3AC13" VerticalAlignment="Center" HorizontalAlignment="Center" Width="74" Fill="#FFFFDD09"/>
+        <Label Content="1$" HorizontalAlignment="Center"  VerticalAlignment="Center" RenderTransformOrigin="0.899,0.471"/>
+        <Ellipse HorizontalAlignment="Center"  VerticalAlignment="Center" Height="74" Stroke="#FFF3AC13"  Width="74" Fill="#FFFFDD09" Grid.Column="1"/>
+        <Ellipse HorizontalAlignment="Center" Height="74"  Stroke="#FFF3AC13" VerticalAlignment="Center" Width="74" Fill="#FFFFDD09" Grid.Column="2"/>
+        <Ellipse HorizontalAlignment="Center" Height="74" Stroke="#FFF3AC13" VerticalAlignment="Center" Width="74" Fill="#FFFFDD09" Grid.Column="3"/>
+        <Label Content="2$" HorizontalAlignment="Center" VerticalContentAlignment="Center"   RenderTransformOrigin="0.899,0.471 " Grid.Column="1"/>
+        <Label Content="5$" HorizontalAlignment="Center"  VerticalAlignment="Center" RenderTransformOrigin="0.899,0.471" Grid.Column="2"/>
+        <Label Content="10$" HorizontalAlignment="Center"  VerticalAlignment="Center" RenderTransformOrigin="0.899,0.471" Grid.Column="3"/>
+        <TextBox x:Name="TexBox1" HorizontalAlignment="Center" Height="21" TextWrapping="Wrap" Text="0 " VerticalAlignment="Bottom" Width="23" />
+        <TextBox Name="TexBox2" HorizontalAlignment="Center" Height="21" TextWrapping="Wrap" Text="0 " VerticalAlignment="Bottom" Width="23"  Grid.Column="1"/>
+        <TextBox Name="TexBox5" HorizontalAlignment="Center" Height="21" TextWrapping="Wrap" Text="0 " VerticalAlignment="Bottom" Width="23"  Grid.Column="2"/>
+        <TextBox Name="TexBox10" HorizontalAlignment="Center" Height="21" TextWrapping="Wrap" Text="0 " VerticalAlignment="Bottom" Width="29"  Grid.Column="3"/>
+        <Button Content="Сохранить" HorizontalAlignment="Left" Background="Navy" Foreground="YellowGreen" VerticalAlignment="Top" FontSize="20" Width="137" Height="50" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1"/>
+
+
+    </Grid>
+</Page>
